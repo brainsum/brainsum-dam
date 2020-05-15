@@ -1,0 +1,82 @@
+uuid: 747ebafb-66b8-4d71-8018-da224b1349ac
+langcode: en
+status: false
+dependencies:
+  config:
+    - filter.format.blogs
+  module:
+    - ckeditor
+_core:
+  default_config_hash: 9xziSEMPxTX6TccvIU2eP4s2ee-Uj7B14_oic82CA7U
+format: blogs
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - Strike
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - Outdent
+            - Indent
+            - Format
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - HorizontalRule
+            - Blockquote
+            - DrupalImage
+            - media
+        -
+          name: Tools
+          items:
+            - Undo
+            - Redo
+            - Cut
+            - Copy
+            - Paste
+            - PasteText
+            - PasteFromWord
+            - Table
+            - ShowBlocks
+            - RemoveFormat
+            - Maximize
+            - SpecialChar
+            - Source
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+    video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

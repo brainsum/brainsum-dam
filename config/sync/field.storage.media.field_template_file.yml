@@ -1,0 +1,25 @@
+uuid: 24dcc754-ac36-4575-b9ed-5cb9fbc96175
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - media
+_core:
+  default_config_hash: iRnAjvsvxOYgxOxzkQVlfoljLwfVcgsodqJ7FglB7q8
+id: media.field_template_file
+field_name: field_template_file
+entity_type: media
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: private
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

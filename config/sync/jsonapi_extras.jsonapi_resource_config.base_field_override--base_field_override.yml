@@ -1,0 +1,53 @@
+uuid: 396c9da9-d2d4-4106-85a1-5f0a40dd8e6a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dm_8_t3qn_AJ0drTqWriSraK37Nmmw6lRt-83h9HSWI
+id: base_field_override--base_field_override
+disabled: true
+path: base_field_override/base_field_override
+resourceType: base_field_override--base_field_override
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  label:
+    fieldName: label
+    publicName: label
+    enhancer:
+      id: ''
+    disabled: false
+  revision:
+    fieldName: revision
+    publicName: revision
+    enhancer:
+      id: ''
+    disabled: false
+  bundle:
+    fieldName: bundle
+    publicName: bundle
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  default_langcode:
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false

@@ -1,0 +1,55 @@
+uuid: 97af578d-86ea-4c75-a6b6-689042e20857
+langcode: en
+status: true
+dependencies:
+  module:
+    - field
+_core:
+  default_config_hash: D5963K9atgDqAR1uRQqCs3aqyOEyCyK1BuQ3LFFXbi0
+id: field_config--field_config
+disabled: true
+path: field_config/field_config
+resourceType: field_config--field_config
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  label:
+    fieldName: label
+    publicName: label
+    enhancer:
+      id: ''
+    disabled: false
+  revision:
+    fieldName: revision
+    publicName: revision
+    enhancer:
+      id: ''
+    disabled: false
+  bundle:
+    fieldName: bundle
+    publicName: bundle
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  default_langcode:
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false

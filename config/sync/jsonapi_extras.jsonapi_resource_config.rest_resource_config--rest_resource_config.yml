@@ -1,0 +1,49 @@
+uuid: 67d71a8f-b677-4ae4-a1d5-6effc56e2392
+langcode: en
+status: true
+dependencies:
+  module:
+    - rest
+_core:
+  default_config_hash: zJIcQc4MlPILHF2WYhT_ZyOu3zNo1zIaNfSYlFiPMiI
+id: rest_resource_config--rest_resource_config
+disabled: true
+path: rest_resource_config/rest_resource_config
+resourceType: rest_resource_config--rest_resource_config
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  revision:
+    fieldName: revision
+    publicName: revision
+    enhancer:
+      id: ''
+    disabled: false
+  bundle:
+    fieldName: bundle
+    publicName: bundle
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  default_langcode:
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false

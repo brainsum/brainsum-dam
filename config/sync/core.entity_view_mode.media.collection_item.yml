@@ -1,0 +1,12 @@
+uuid: 1251db6e-9ad2-4dc1-8399-b99237d29cd4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: nl1jNkYkyAJL3W33pOiZb8oPAOPc8iZUKXMtBBuYDxg
+id: media.collection_item
+label: 'Collection item'
+targetEntityType: media
+cache: true

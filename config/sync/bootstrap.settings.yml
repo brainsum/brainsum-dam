@@ -1,0 +1,18 @@
+schemas:
+  bootstrap: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: ''
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: false
+logo:
+  path: ''
+  url: ''
+  use_default: true
+_core:
+  default_config_hash: OO_mY0-hSpIK1ow3Gbp80tW-jZ4546py02xiPJfKszU

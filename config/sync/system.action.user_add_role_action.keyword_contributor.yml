@@ -1,0 +1,16 @@
+uuid: 1910def2-8dc5-436f-affc-41b6c04e5fa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.keyword_contributor
+  module:
+    - user
+_core:
+  default_config_hash: TNX7Vy1JmITqOzVEMebj8gLLMX60I0M1qh4o0YObFrA
+id: user_add_role_action.keyword_contributor
+label: 'Add the Keyword contributor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: keyword_contributor

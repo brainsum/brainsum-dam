@@ -1,0 +1,27 @@
+uuid: 92e64283-ae19-4667-b299-e19c45f52667
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - damo_theme
+_core:
+  default_config_hash: cEnEKnnN-dlf96qv4QPFFQZ8Qo-CZsyNaFVhWlBfw9A
+id: damo_theme_admin
+theme: damo_theme
+region: navigation
+weight: -4
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administration
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 0198276c-f141-446c-8975-d47d186f8333
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: i_iliyTpMOiJN82usdDalC-QL3PBYVswENigOtBSOn0
+id: user.field_user_fullname
+field_name: field_user_fullname
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

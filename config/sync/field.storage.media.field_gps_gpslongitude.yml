@@ -1,0 +1,23 @@
+uuid: e74c9c1e-a9f2-442c-b84f-f1d3f84ec3b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: b6Z7SEXFmThkSmTz6s4tN2h542zvwXe9SNttkaebafk
+id: media.field_gps_gpslongitude
+field_name: field_gps_gpslongitude
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

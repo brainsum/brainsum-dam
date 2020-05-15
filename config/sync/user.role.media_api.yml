@@ -1,0 +1,23 @@
+uuid: 2728c720-cf3d-489a-92fb-2eacbd90ab3c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: N-jNdSAgJMpemxecq6rf4oQIHij29fzJgwOXGr7Xa3Y
+id: media_api
+label: 'Media API'
+weight: 4
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access tml jsonapi resources'
+  - 'add terms in category'
+  - 'add terms in keyword'
+  - 'edit terms in category'
+  - 'edit terms in keyword'
+  - 'restful get tml_media_library'
+  - 'view any published media'
+  - 'view shared media collection entities'
+  - 'view shared media collection item entities'
+  - 'view terms in category'
+  - 'view terms in keyword'

@@ -1,0 +1,21 @@
+uuid: 5f6c3867-8909-4773-a626-edeb36152ee9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_iptc_object_name
+    - media.type.image
+_core:
+  default_config_hash: a0QjriGyS8vu-h0Xdf5kxPEY8Yp-1NznoXZq1M5-B1s
+id: media.image.field_iptc_object_name
+field_name: field_iptc_object_name
+entity_type: media
+bundle: image
+label: 'IPTC object name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

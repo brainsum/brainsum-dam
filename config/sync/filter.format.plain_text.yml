@@ -1,0 +1,29 @@
+uuid: 0069d1a3-107f-4c28-81e4-5c57611bcae8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UndEPoqpy8xCoRE0Ey2wTAcOS1oofGJR17fhsK1qRHM
+name: 'Plain text'
+format: plain_text
+weight: 3
+filters:
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: true
+    weight: -10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

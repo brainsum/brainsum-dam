@@ -1,0 +1,31 @@
+uuid: 7745e277-9ea0-4426-8b2a-4f2f4f4c9ae5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.asset_search
+  module:
+    - system
+    - views
+  theme:
+    - damo_theme
+_core:
+  default_config_hash: 1mIBn-snZ8n2RGpHcajGZ8vvzKF_vBzoPkvxi4rZS8o
+id: damo_theme_exposed_asset_search_form
+theme: damo_theme
+region: navigation
+weight: -3
+provider: null
+plugin: 'views_exposed_filter_block:asset_search-asset_search'
+settings:
+  id: 'views_exposed_filter_block:asset_search-asset_search'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/assets"
+    negate: false
+    context_mapping: {  }

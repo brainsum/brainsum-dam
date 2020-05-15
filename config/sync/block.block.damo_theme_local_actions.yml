@@ -1,0 +1,20 @@
+uuid: f10b1ab8-e280-4828-a5a5-7381c731ac0b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - damo_theme
+_core:
+  default_config_hash: 7MdRzOTCwIKup6q-kOuikyGyhbpZmZs9ATLtnMRcemc
+id: damo_theme_local_actions
+theme: damo_theme
+region: highlighted
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

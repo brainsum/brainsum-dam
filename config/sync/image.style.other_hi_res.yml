@@ -1,0 +1,23 @@
+uuid: ec45cd00-917b-4418-92a8-eba05303de7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+_core:
+  default_config_hash: mZepgtJaSZlKOPEC4uIye10CdVR4slyArL0IGgLc2QE
+name: other_hi_res
+label: 'Original ratio'
+effects:
+  6076116d-2e26-42f6-962f-be7678897b27:
+    uuid: 6076116d-2e26-42f6-962f-be7678897b27
+    id: image_effects_watermark
+    weight: 1
+    data:
+      watermark_image: profiles/contrib/damo-distribution/modules/damo_image_media_styles_preview/images/watermark/dam-logo.png
+      watermark_width: 20%
+      watermark_height: ''
+      placement: right-bottom
+      x_offset: ''
+      y_offset: ''
+      opacity: 100

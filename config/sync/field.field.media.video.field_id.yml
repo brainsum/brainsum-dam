@@ -1,0 +1,21 @@
+uuid: b448a1f1-2733-4424-bfab-cdd6895f1ca8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_id
+    - media.type.video
+_core:
+  default_config_hash: O4YpHELdT3IezKCC_7EvX7uSVRHvFVNhnJV30BIvTM8
+id: media.video.field_id
+field_name: field_id
+entity_type: media
+bundle: video
+label: 'Video ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

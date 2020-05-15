@@ -1,0 +1,27 @@
+uuid: 805a0699-a95c-4b46-a838-fb79aefc8db5
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - damo_theme
+_core:
+  default_config_hash: y7eRA5tzNwLmrDa5S8R4NANjhTPpaaGanc1kxF0ATrM
+id: damo_theme_tools
+theme: damo_theme
+region: navigation
+weight: -2
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

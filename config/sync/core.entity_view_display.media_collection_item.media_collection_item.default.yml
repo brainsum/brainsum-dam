@@ -1,0 +1,29 @@
+uuid: 1e46206a-4136-426e-b42f-05039b618aab
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_collection
+_core:
+  default_config_hash: Fqa5hbuVUtArV-MYy5w0MDrUALZ17cQk6K0UqNGRtcc
+id: media_collection_item.media_collection_item.default
+targetEntityType: media_collection_item
+bundle: media_collection_item
+mode: default
+content:
+  media:
+    label: hidden
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    settings:
+      view_mode: collection_item
+      link: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  parent: true
+  search_api_excerpt: true
+  shared_parent: true
+  style: true
+  uid: true

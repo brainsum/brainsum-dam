@@ -1,0 +1,15 @@
+name: 'Drush Site-Install'
+mail: local@example.com
+slogan: DAMo
+page:
+  403: ''
+  404: ''
+  front: /assets
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+mail_notification: ''
+_core:
+  default_config_hash: cMUQyjLbN5D_c08dYZE0vSuGPZ2d-j2fKZFiLMJjp7U
+uuid: 1f3c56af-a98a-4887-b4aa-94bb3845d64e

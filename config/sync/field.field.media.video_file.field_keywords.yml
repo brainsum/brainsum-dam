@@ -1,0 +1,30 @@
+uuid: 9d23498d-8a24-4aee-93f9-85bf159492ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_keywords
+    - media.type.video_file
+    - taxonomy.vocabulary.keyword
+_core:
+  default_config_hash: QVR930bC-26bHZzPdrUY13Ll2LAbulHQuAT0WRn1ZGY
+id: media.video_file.field_keywords
+field_name: field_keywords
+entity_type: media
+bundle: video_file
+label: Keywords
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      keyword: keyword
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

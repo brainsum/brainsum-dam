@@ -1,0 +1,16 @@
+uuid: bda82e8c-221f-4760-a451-fe49155ccfba
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.agency
+  module:
+    - user
+_core:
+  default_config_hash: GlGazZAG1eWV56SHJwwVsHRFj9UK0cv-AnMLMW84O-s
+id: user_remove_role_action.agency
+label: 'Remove the Agency role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: agency

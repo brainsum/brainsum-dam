@@ -1,0 +1,21 @@
+uuid: ec3cbb57-09a4-47ad-a24e-f0799c16e389
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - text
+_core:
+  default_config_hash: 7LbV6c5RPl0o_GED2o6KtfNmSJAeaI5phrxkqabed40
+id: media.field_logo_description
+field_name: field_logo_description
+entity_type: media
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

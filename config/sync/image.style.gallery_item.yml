@@ -1,0 +1,17 @@
+uuid: 46080288-3362-45b0-9809-474d2db8947a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1QXqwCMHcRzAD_TU40aDMtisa__nWEX3HIxOfuUO7Dw
+name: gallery_item
+label: 'Gallery item'
+effects:
+  cb8cb8c0-1a5d-4f4b-bd82-582ac880b345:
+    uuid: cb8cb8c0-1a5d-4f4b-bd82-582ac880b345
+    id: image_scale
+    weight: 1
+    data:
+      width: 500
+      height: null
+      upscale: false

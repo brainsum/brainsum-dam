@@ -1,0 +1,13 @@
+uuid: 57409405-5bd6-44d5-b760-940fa607481b
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.guideline
+_core:
+  default_config_hash: X-wotFf8ZeByakJJDjq1Kj7fmFHghVvTZorxzp2cdJ8
+id: media.guideline
+target_entity_type_id: media
+target_bundle: guideline
+default_langcode: site_default
+language_alterable: false

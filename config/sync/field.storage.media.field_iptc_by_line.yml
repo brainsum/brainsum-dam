@@ -1,0 +1,23 @@
+uuid: e6e27004-7ba0-4233-91bc-62d8989627d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: J3xqs7g0c8ho9FCPPu0U4aJ708GKTwBsArHSPboa0pg
+id: media.field_iptc_by_line
+field_name: field_iptc_by_line
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

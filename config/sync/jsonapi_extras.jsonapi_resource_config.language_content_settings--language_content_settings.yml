@@ -1,0 +1,49 @@
+uuid: a2a529f4-4cfa-4bc5-b99a-ca241a41176e
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: 9iUvJHmmnGv7QB9qRFE6Pqc69NWtmzPIAgOkTOjKJZo
+id: language_content_settings--language_content_settings
+disabled: true
+path: language_content_settings/language_content_settings
+resourceType: language_content_settings--language_content_settings
+resourceFields:
+  id:
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+    disabled: false
+  revision:
+    fieldName: revision
+    publicName: revision
+    enhancer:
+      id: ''
+    disabled: false
+  bundle:
+    fieldName: bundle
+    publicName: bundle
+    enhancer:
+      id: ''
+    disabled: false
+  langcode:
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+    disabled: false
+  default_langcode:
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+    disabled: false
+  uuid:
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+    disabled: false

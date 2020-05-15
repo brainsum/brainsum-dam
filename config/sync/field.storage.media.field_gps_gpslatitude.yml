@@ -1,0 +1,23 @@
+uuid: 959b89c0-06a3-4d56-82f8-91cb7fdc9cbd
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: V722qvdnmNJVl4pjq2dxdTbrqUOaD8csHz4aQbqQ6Gk
+id: media.field_gps_gpslatitude
+field_name: field_gps_gpslatitude
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

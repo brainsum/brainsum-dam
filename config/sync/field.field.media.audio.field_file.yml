@@ -1,0 +1,29 @@
+uuid: 9635be2c-fad5-4be2-9795-966ee7fa3642
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file
+    - media.type.audio
+  module:
+    - file
+_core:
+  default_config_hash: lYTR9qEBTRQxIcF-zOhk9s7bF7SVzWBH0FHUInGGURU
+id: media.audio.field_file
+field_name: field_file
+entity_type: media
+bundle: audio
+label: 'Audio file'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'media/audio/file/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'mp3 wav aac flac'
+  max_filesize: '50 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

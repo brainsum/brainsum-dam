@@ -1,0 +1,31 @@
+uuid: e7e4700e-b8b8-4dd3-ad93-bd9c8b4636eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_keywords
+    - media.type.audio
+    - taxonomy.vocabulary.keyword
+_core:
+  default_config_hash: ZAjxvhmv4sHnbaHcyJFE-fu0voUOai5b9SVDPfT16a8
+id: media.audio.field_keywords
+field_name: field_keywords
+entity_type: media
+bundle: audio
+label: Keywords
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      keyword: keyword
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

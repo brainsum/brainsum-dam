@@ -1,0 +1,24 @@
+uuid: 52b653ab-3f35-4c24-93c5-af2ed265e5cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.video_file
+_core:
+  default_config_hash: xAgKc_xwYizgVU_Oz9WOamFfyS_4-XNqSLxyoGQ5LQs
+id: media.video_file.status
+field_name: status
+entity_type: media
+bundle: video_file
+label: 'Publishing status'
+description: 'A boolean indicating whether the media is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

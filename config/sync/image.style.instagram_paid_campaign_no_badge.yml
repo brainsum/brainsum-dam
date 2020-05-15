@@ -1,0 +1,19 @@
+uuid: 474500e0-9891-490c-a388-fc1bcfc3a0b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: 36spG9bvNIP_PGhdXeAlN8TRHOCRqlfHPcnFnljMUlw
+name: instagram_paid_campaign_no_badge
+label: 'Instagram (paid campaign) (no badge)'
+effects:
+  ce9c18ad-af36-48aa-8805-20b36f44cfd0:
+    uuid: ce9c18ad-af36-48aa-8805-20b36f44cfd0
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 628
+      crop_type: focal_point

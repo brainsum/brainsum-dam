@@ -1,0 +1,13 @@
+uuid: 3cdfe548-986d-4083-bad9-6d3fe89d6bc3
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wSg6ykCPOh0Zju8-ymsQUQ7j-RjYduK5dRoUROdzhMA
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'view shared media collection entities'
+  - 'view shared media collection item entities'

@@ -1,0 +1,13 @@
+uuid: 9d28d208-cc0d-434f-816d-150ef524c917
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.logo
+_core:
+  default_config_hash: ILCAfQQZ60tkUbm67XPDSE7voy9mhZtcFpocfgie2yk
+id: media.logo
+target_entity_type_id: media
+target_bundle: logo
+default_langcode: site_default
+language_alterable: false

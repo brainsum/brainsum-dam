@@ -1,0 +1,19 @@
+uuid: 446126ce-a68f-4af3-9357-0be5c67905c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: 1wY_7pe8vJV9Vq7WejPY4KWeyhjdzwKQg7S8ADon700
+name: ms_powerpoint_no_badge
+label: 'PowerPoint (no badge)'
+effects:
+  b62ba3be-3443-4797-9caf-4fb7bed566eb:
+    uuid: b62ba3be-3443-4797-9caf-4fb7bed566eb
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 900
+      crop_type: focal_point

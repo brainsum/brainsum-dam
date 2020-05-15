@@ -1,0 +1,19 @@
+uuid: 9dcdf929-98f4-4f46-86c0-f868492acdf5
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: FEPVnDMWHRSKjCrWF2MzpGvQDeTSXb5_XY0nO6hVWC8
+name: twitter_organic_tweet_no_badge
+label: 'Twitter, organic tweet (no badge)'
+effects:
+  2b01dd53-8951-4727-b753-d3c47b5f302e:
+    uuid: 2b01dd53-8951-4727-b753-d3c47b5f302e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 675
+      crop_type: focal_point

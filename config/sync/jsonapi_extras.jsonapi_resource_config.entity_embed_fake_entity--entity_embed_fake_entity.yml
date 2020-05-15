@@ -1,0 +1,13 @@
+uuid: d46a0572-dcbb-4e32-aed1-8dc3908ea92e
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+_core:
+  default_config_hash: 6HMohwvrL-defq_YJP_99kiHRTdEN2dl8twc8iwNpwo
+id: entity_embed_fake_entity--entity_embed_fake_entity
+disabled: true
+path: entity_embed_fake_entity/entity_embed_fake_entity
+resourceType: entity_embed_fake_entity--entity_embed_fake_entity
+resourceFields: ''
