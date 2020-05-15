@@ -77,7 +77,7 @@ services:
   solr:
     image: wodby/solr:8-4.5.3
     environment:
-      SOLR_DEFAULT_CONFIG_SET: "search_api_solr_8.x-3.2"
+      SOLR_DEFAULT_CONFIG_SET: "search_api_solr_8.x-3.9"
       SOLR_HEAP: 1024m
     labels:
       - "traefik.http.routers.${PROJECT_NAME}_solr.rule=Host(`solr.${PROJECT_BASE_URL}`)"
