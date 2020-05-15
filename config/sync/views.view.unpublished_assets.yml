@@ -1,21 +1,20 @@
-uuid: 5620bbed-923c-4479-908f-fe91d152cb98
+uuid: 1159134a-983e-4768-a518-36f3c2407b1d
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.database_media
+    - search_api.index.solr_media
   module:
-    - better_exposed_filters
     - search_api
     - user
 _core:
-  default_config_hash: 98srPgBF9valRU_djR35q52UX-Saui3DB8YTFwUhoPA
+  default_config_hash: hnOKhKS88qq-5DblFqd-slIkEkebDhpN5dfVThnlFXc
 id: unpublished_assets
 label: 'Unpublished assets'
 module: views
 description: 'List of unpublished assets.'
 tag: ''
-base_table: search_api_index_database_media
+base_table: search_api_index_solr_media
 base_field: search_api_id
 display:
   default:
@@ -38,7 +37,7 @@ display:
           skip_access: false
           preserve_facet_query_args: false
       exposed_form:
-        type: bef
+        type: basic
         options:
           submit_button: Apply
           reset_button: false
@@ -47,26 +46,6 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Select any filter and click on Apply to see results'
-          text_input_required_format: full_html
-          bef:
-            general:
-              autosubmit: false
-              autosubmit_exclude_textfield: false
-              autosubmit_hide: false
-              input_required: false
-              allow_secondary: false
-              secondary_label: 'Advanced options'
-            sort:
-              plugin_id: default
-              advanced:
-                combine: false
-                combine_rewrite: ''
-                reset: false
-                reset_label: ''
-                collapsible: false
-                collapsible_label: 'Sort options'
-                is_secondary: false
       pager:
         type: full
         options:
@@ -105,7 +84,7 @@ display:
               video_file: media_library
       fields:
         changed:
-          table: search_api_index_database_media
+          table: search_api_index_solr_media
           field: changed
           id: changed
           entity_type: null
@@ -181,7 +160,7 @@ display:
       filters:
         media_status:
           id: media_status
-          table: search_api_index_database_media
+          table: search_api_index_solr_media
           field: media_status
           relationship: none
           group_type: group
@@ -220,7 +199,7 @@ display:
       sorts:
         created:
           id: created
-          table: search_api_index_database_media
+          table: search_api_index_solr_media
           field: created
           relationship: none
           group_type: group
@@ -232,7 +211,7 @@ display:
           plugin_id: search_api
         media_name:
           id: media_name
-          table: search_api_index_database_media
+          table: search_api_index_solr_media
           field: media_name
           relationship: none
           group_type: group
@@ -271,7 +250,7 @@ display:
       arguments:
         author:
           id: author
-          table: search_api_index_database_media
+          table: search_api_index_solr_media
           field: author
           relationship: none
           group_type: group
@@ -313,7 +292,8 @@ display:
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:search_api.index.solr_media'
   unpublished_assets:
     display_plugin: page
     id: unpublished_assets
@@ -336,7 +316,8 @@ display:
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:search_api.index.solr_media'
   user_unpublished_assets:
     display_plugin: page
     id: user_unpublished_assets
@@ -361,7 +342,7 @@ display:
       relationships:
         uid:
           id: uid
-          table: search_api_datasource_database_media_entity_media
+          table: search_api_datasource_solr_media_entity_media
           field: uid
           relationship: none
           group_type: group
@@ -373,7 +354,7 @@ display:
       filters:
         media_status:
           id: media_status
-          table: search_api_index_database_media
+          table: search_api_index_solr_media
           field: media_status
           relationship: none
           group_type: group
@@ -416,7 +397,7 @@ display:
       arguments:
         author:
           id: author
-          table: search_api_index_database_media
+          table: search_api_index_solr_media
           field: author
           relationship: none
           group_type: group
@@ -456,4 +437,5 @@ display:
         - 'url.query_args:sort_order'
         - user
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:search_api.index.solr_media'

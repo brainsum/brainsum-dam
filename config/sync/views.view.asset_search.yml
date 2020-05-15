@@ -1,22 +1,22 @@
-uuid: 17f33983-aa4e-408e-8f9c-7a4db8c15cdb
+uuid: 80c5ebed-13c0-42c1-945c-56609af620a2
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.database_media
+    - search_api.index.solr_media
     - taxonomy.vocabulary.category
   module:
     - better_exposed_filters
     - search_api
     - user
 _core:
-  default_config_hash: r4YxMdxXUxC_TQYTyjF4o8nrsXHnDedyVQQIQS2z8v0
+  default_config_hash: bUgtkEEs4O13Jk-ToXp6RRhED6XyOR-jIntYnaFpI6s
 id: asset_search
 label: 'Asset search'
 module: views
 description: 'Assets search view.'
 tag: ''
-base_table: search_api_index_database_media
+base_table: search_api_index_solr_media
 base_field: search_api_id
 display:
   default:
@@ -37,7 +37,6 @@ display:
         options:
           bypass_access: false
           skip_access: false
-          preserve_facet_query_args: false
       exposed_form:
         type: bef
         options:
@@ -59,14 +58,14 @@ display:
               allow_secondary: false
               secondary_label: 'Advanced options'
             filter:
-              search_api_fulltext:
+              search_api_fulltext_1:
                 plugin_id: default
                 advanced:
                   rewrite:
                     filter_rewrite_values: ''
                   collapsible: false
                   is_secondary: false
-              search_api_fulltext_1:
+              search_api_fulltext:
                 plugin_id: default
                 advanced:
                   rewrite:
@@ -81,6 +80,30 @@ display:
                     filter_rewrite_values: '- Any -|SELECT CATEGORY'
                   collapsible: false
                   is_secondary: false
+            search_api_fulltext_1:
+              bef_format: default
+              more_options:
+                is_secondary: false
+                placeholder_text: ''
+                rewrite:
+                  filter_rewrite_values: ''
+            search_api_fulltext:
+              bef_format: default
+              more_options:
+                is_secondary: false
+                placeholder_text: ''
+                rewrite:
+                  filter_rewrite_values: ''
+            media_category:
+              bef_format: default
+              more_options:
+                bef_select_all_none: false
+                bef_select_all_none_nested: false
+                bef_collapsible: false
+                is_secondary: false
+                rewrite:
+                  filter_rewrite_values: '- Any -|SELECT CATEGORY'
+          input_required: false
       pager:
         type: full
         options:
@@ -104,6 +127,10 @@ display:
           quantity: 9
       style:
         type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
         type: search_api
         options:
@@ -118,10 +145,13 @@ display:
               video: media_library
               video_file: media_library
       fields:
-        media_name:
-          id: media_name
-          table: search_api_index_database_media
-          field: media_name
+        document_filename:
+          table: search_api_index_solr_media
+          field: document_filename
+          id: document_filename
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api_field
           relationship: none
           group_type: group
           admin_label: ''
@@ -158,7 +188,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -168,8 +198,7 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings:
-            link_to_entity: false
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -187,25 +216,24 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-          plugin_id: search_api_field
       filters:
-        search_api_fulltext:
-          id: search_api_fulltext
-          table: search_api_index_database_media
+        search_api_fulltext_1:
+          id: search_api_fulltext_1
+          table: search_api_index_solr_media
           field: search_api_fulltext
           relationship: none
           group_type: group
-          admin_label: 'Type (fulltext)'
+          admin_label: 'Type (Fulltext search)'
           operator: or
           value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: search_api_fulltext_op
+            operator_id: search_api_fulltext_1_op
             label: ''
             description: ''
             use_operator: false
-            operator: search_api_fulltext_op
+            operator: search_api_fulltext_1_op
             operator_limit_selection: false
             operator_list: {  }
             identifier: type
@@ -240,23 +268,23 @@ display:
           fields:
             - media_bundle
           plugin_id: search_api_fulltext
-        search_api_fulltext_1:
-          id: search_api_fulltext_1
-          table: search_api_index_database_media
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_solr_media
           field: search_api_fulltext
           relationship: none
           group_type: group
-          admin_label: 'Search (fulltext)'
+          admin_label: ''
           operator: and
           value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: search_api_fulltext_1_op
+            operator_id: search_api_fulltext_op
             label: ''
             description: ''
             use_operator: false
-            operator: search_api_fulltext_1_op
+            operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
             identifier: text
@@ -298,47 +326,9 @@ display:
             - template_filename
             - video_filename
           plugin_id: search_api_fulltext
-        media_status:
-          id: media_status
-          table: search_api_index_database_media
-          field: media_status
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: search_api_boolean
         media_category:
           id: media_category
-          table: search_api_index_database_media
+          table: search_api_index_solr_media
           field: media_category
           relationship: none
           group_type: group
@@ -389,10 +379,63 @@ display:
           hierarchy: true
           error_message: true
           plugin_id: search_api_term
+        media_status:
+          id: media_status
+          table: search_api_index_solr_media
+          field: media_status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: Published
+            description: ''
+            use_operator: false
+            operator: media_status_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: status
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              dam: '0'
+              keyword_contributor: '0'
+              media_api: '0'
+              agency: '0'
+              manager: '0'
+              administrator: '0'
+          is_grouped: true
+          group_info:
+            label: Status
+            description: ''
+            identifier: status
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: '1'
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: Published
+                operator: '='
+                value: '1'
+              2:
+                title: Unpublished
+                operator: '='
+                value: '0'
+          plugin_id: search_api_boolean
       sorts:
         changed:
           id: changed
-          table: search_api_index_database_media
+          table: search_api_index_solr_media
           field: changed
           relationship: none
           group_type: group
@@ -402,7 +445,6 @@ display:
           expose:
             label: ''
           plugin_id: search_api
-      title: 'Asset search'
       header:
         result:
           id: result
@@ -431,7 +473,7 @@ display:
       arguments:
         search_api_fulltext:
           id: search_api_fulltext
-          table: search_api_index_database_media
+          table: search_api_index_solr_media
           field: search_api_fulltext
           relationship: none
           group_type: group
@@ -468,25 +510,32 @@ display:
           plugin_id: search_api_fulltext
       display_extenders: {  }
       use_ajax: true
+      title: 'Social Media Assets'
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      use_more: false
+      use_more_always: true
+      use_more_text: more
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
         - user
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:search_api.index.solr_media'
   asset_search:
     display_plugin: page
     id: asset_search
-    display_title: Assets
+    display_title: 'Social Media Assets'
     position: 1
     display_options:
       display_extenders: {  }
       path: assets
-      display_description: 'Main search view for assets.'
       menu:
         type: tab
         title: Media
@@ -496,14 +545,15 @@ display:
         weight: 0
         context: '0'
         menu_name: main
+      display_description: ''
       exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
         - user
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:search_api.index.solr_media'

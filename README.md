@@ -2,6 +2,10 @@
 
 Based on the brainsum/damo-project composer project.
 
+After drush si:
+- `drush urol administrator admin`
+
+---
 
 # DAMo - Composer template
 

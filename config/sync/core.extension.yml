@@ -13,6 +13,7 @@ module:
   damo_assets_download: 0
   damo_assets_library: 0
   damo_assets_lister: 0
+  damo_assets_solr: 0
   damo_assets_statistics: 0
   damo_assets_thumbnails: 0
   damo_common: 0
@@ -63,6 +64,7 @@ module:
   rest: 0
   search_api: 0
   search_api_db: 0
+  search_api_solr: 0
   serialization: 0
   sophron: 0
   system: 0
