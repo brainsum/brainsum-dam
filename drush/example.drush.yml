@@ -1,0 +1,3 @@
+options:
+  root: /var/www/html/web
+  uri: '${env.DRUPAL_BASE_URI}'
