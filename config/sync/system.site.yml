@@ -1,5 +1,5 @@
-name: 'Drush Site-Install'
-mail: local@example.com
+name: 'DAMo'
+mail: dev+dam@brainsum.com
 slogan: DAMo
 page:
   403: ''
