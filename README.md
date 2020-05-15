@@ -5,6 +5,14 @@ Based on the brainsum/damo-project composer project.
 After drush si:
 - `drush urol administrator admin`
 
+## Fixing http->https link in JSONAPI when behind a reverse proxy.
+
+If using apache add this:
+```apacheconfig
+    RequestHeader set X-Forwarded-Proto "https"
+    RequestHeader set X-Forwarded-Port 443
+```
+
 ---
 
 # DAMo - Composer template
