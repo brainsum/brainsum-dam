@@ -39,6 +39,7 @@
         "cweagans/composer-patches": "^1.6",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/google_cloud_vision": "^1.0",
         "drush/drush": "^9.0|^10.0",
         "oomphinc/composer-installers-extender": "^1.1",
         "symfony/event-dispatcher": "4.3.4 as 3.4.35",
@@ -65,7 +66,11 @@
     "extra": {
         "enable-patching": true,
         "composer-exit-on-patch-failure": true,
-        "patches": {},
+        "patches": {
+            "drupal/google_cloud_vision": {
+                "S3FS compatibility of fopen().": "https://www.drupal.org/files/issues/2020-05-25/fopen-user-error-when-using-s3fs-13644864-3.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
