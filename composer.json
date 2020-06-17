@@ -73,7 +73,8 @@
             "file-mapping": {
                 "[web-root]/robots.txt": false,
                 "[web-root]/sites/default/default.settings.php": false,
-                "[web-root]/sites/example.settings.local.php": false
+                "[web-root]/sites/example.settings.local.php": false,
+                "[web-root]/sites/default/default.services.yml": false
             }
         },
         "installer-paths": {
