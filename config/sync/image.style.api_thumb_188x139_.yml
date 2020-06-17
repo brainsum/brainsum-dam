@@ -1,0 +1,15 @@
+uuid: 6267ff28-de82-4371-81ba-17643e6108f4
+langcode: en
+status: true
+dependencies: {  }
+name: api_thumb_188x139_
+label: 'Api thumb (188x139)'
+effects:
+  e49af501-3c0a-4cee-9794-1abdf046a355:
+    uuid: e49af501-3c0a-4cee-9794-1abdf046a355
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 188
+      height: 139
+      anchor: center-center

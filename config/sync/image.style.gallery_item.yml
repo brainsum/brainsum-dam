@@ -1,7 +1,9 @@
 uuid: 46080288-3362-45b0-9809-474d2db8947a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 _core:
   default_config_hash: 1QXqwCMHcRzAD_TU40aDMtisa__nWEX3HIxOfuUO7Dw
 name: gallery_item
@@ -15,3 +17,11 @@ effects:
       width: 500
       height: null
       upscale: false
+  1ddf0fe3-7eef-4531-ab47-49e8df498d07:
+    uuid: 1ddf0fe3-7eef-4531-ab47-49e8df498d07
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 500
+      height: 334
+      crop_type: focal_point
