@@ -401,28 +401,31 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.7.0",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "141b272484481432cda342727a427dc1e206bfa0"
+                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/141b272484481432cda342727a427dc1e206bfa0",
-                "reference": "141b272484481432cda342727a427dc1e206bfa0",
+                "url": "https://api.github.com/repos/composer/installers/zipball/b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
+                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "composer-plugin-api": "^1.0 || ^2.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "^4.8.36"
+                "composer/composer": "1.6.* || 2.0.*@dev",
+                "composer/semver": "1.0.* || 2.0.*@dev",
+                "phpunit/phpunit": "^4.8.36",
+                "sebastian/comparator": "^1.2.4",
+                "symfony/process": "^2.3"
             },
             "type": "composer-plugin",
             "extra": {
@@ -458,6 +461,7 @@
                 "Kanboard",
                 "Lan Management System",
                 "MODX Evo",
+                "MantisBT",
                 "Mautic",
                 "Maya",
                 "OXID",
@@ -512,6 +516,7 @@
                 "shopware",
                 "silverstripe",
                 "sydes",
+                "sylius",
                 "symfony",
                 "typo3",
                 "wordpress",
@@ -519,7 +524,17 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2019-08-12T15:00:31+00:00"
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-04-07T06:57:05+00:00"
         },
         {
             "name": "composer/semver",
@@ -1175,32 +1190,31 @@
         },
         {
             "name": "consolidation/site-alias",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-alias.git",
-                "reference": "8cfd3b6ab6d541086fc970bf850864293b284e6f"
+                "reference": "fd40a03f80f8fd4684b10bef8c8c4ec5a9a9bf26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/8cfd3b6ab6d541086fc970bf850864293b284e6f",
-                "reference": "8cfd3b6ab6d541086fc970bf850864293b284e6f",
+                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/fd40a03f80f8fd4684b10bef8c8c4ec5a9a9bf26",
+                "reference": "fd40a03f80f8fd4684b10bef8c8c4ec5a9a9bf26",
                 "shasum": ""
             },
             "require": {
-                "consolidation/config": "^1.2.1",
+                "consolidation/config": "^1.2.1|^2",
                 "php": ">=5.5.0"
             },
             "require-dev": {
-                "consolidation/robo": "^1.2.3",
+                "consolidation/robo": "^1.2.3|^2",
                 "g1a/composer-test-scenarios": "^3",
                 "knplabs/github-api": "^2.7",
-                "php-coveralls/php-coveralls": "^1",
+                "php-coveralls/php-coveralls": "^2.2",
                 "php-http/guzzle6-adapter": "^1.1",
                 "phpunit/phpunit": "^6",
                 "squizlabs/php_codesniffer": "^2.8",
-                "symfony/console": "^2.8|^3|^4",
-                "symfony/yaml": "~2.3|^3"
+                "symfony/yaml": "~2.3|^3|^4.4|^5"
             },
             "type": "library",
             "extra": {
@@ -1234,16 +1248,16 @@
             ],
             "authors": [
                 {
-                    "name": "Moshe Weitzman",
-                    "email": "weitzman@tejasa.com"
-                },
-                {
                     "name": "Greg Anderson",
                     "email": "greg.1.anderson@greenknowe.org"
+                },
+                {
+                    "name": "Moshe Weitzman",
+                    "email": "weitzman@tejasa.com"
                 }
             ],
             "description": "Manage alias records for local and remote sites.",
-            "time": "2019-03-12T17:31:48+00:00"
+            "time": "2020-05-28T00:33:41+00:00"
         },
         {
             "name": "consolidation/site-process",
@@ -10209,12 +10223,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-security-advisories.git",
-                "reference": "7efee06a7ce1f76cd3bbe0dc8f873e79b7d2d548"
+                "reference": "fb47ff52e072ae7bcd4afd0fdb52d1dff42ad991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-security-advisories/zipball/7efee06a7ce1f76cd3bbe0dc8f873e79b7d2d548",
-                "reference": "7efee06a7ce1f76cd3bbe0dc8f873e79b7d2d548",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-security-advisories/zipball/fb47ff52e072ae7bcd4afd0fdb52d1dff42ad991",
+                "reference": "fb47ff52e072ae7bcd4afd0fdb52d1dff42ad991",
                 "shasum": ""
             },
             "conflict": {
@@ -10227,16 +10241,16 @@
                 "drupal/bootstrap": "<3.5,<3.14",
                 "drupal/ckeditor_uploadimage": "<1.5",
                 "drupal/cleantalk": "<2.7",
-                "drupal/commerce": "<2.9",
+                "drupal/commerce": "<2.9,<2.18",
                 "drupal/config_perms": "<1.1,<1.2",
                 "drupal/config_update": "<1.5",
-                "drupal/core": "<8.0.0-beta2,<8.0.4,<8.1.3,<8.1.7,<8.1.10,<8.2.3,<8.2.7,<8.2.8,<8.3.1,<8.3.4,<8.3.7,<8.3.9,<8.4.6,<8.4.7,<8.4.8,<8.5.1,<8.5.2,<8.5.3,<8.5.6,<8.5.8,<8.5.9,<8.5.11,<8.5.14,<8.5.15,<8.6.2,<8.6.6,<8.6.10,<8.6.13,<8.6.15,<8.6.16,<8.7.0-rc1,<8.7.1,<8.7.5,<8.7.11,<8.7.12,<8.8.1,<8.8.4",
+                "drupal/core": "<8.0.0-beta2,<8.0.4,<8.1.3,<8.1.7,<8.1.10,<8.2.3,<8.2.7,<8.2.8,<8.3.1,<8.3.4,<8.3.7,<8.3.9,<8.4.6,<8.4.7,<8.4.8,<8.5.1,<8.5.2,<8.5.3,<8.5.6,<8.5.8,<8.5.9,<8.5.11,<8.5.14,<8.5.15,<8.6.2,<8.6.6,<8.6.10,<8.6.13,<8.6.15,<8.6.16,<8.7.0-rc1,<8.7.1,<8.7.5,<8.7.11,<8.7.12,<8.7.14,<8.8.1,<8.8.4,<8.8.6",
                 "drupal/create_user_permission": "<1.2",
                 "drupal/cshs": "<1.0-beta2",
                 "drupal/decoupled_router": "<1.2",
                 "drupal/drd": "<3.2,<3.14",
                 "drupal/drd_agent": "<3.1,<3.7",
-                "drupal/drupal": "<8.0.0-beta2,<8.0.4,<8.1.3,<8.1.7,<8.1.10,<8.2.3,<8.2.7,<8.2.8,<8.3.1,<8.3.4,<8.3.7,<8.3.9,<8.4.6,<8.4.7,<8.4.8,<8.5.1,<8.5.2,<8.5.3,<8.5.6,<8.5.8,<8.5.9,<8.5.11,<8.5.14,<8.5.15,<8.6.2,<8.6.6,<8.6.10,<8.6.13,<8.6.15,<8.6.16,<8.7.0-rc1,<8.7.1,<8.7.5,<8.7.11,<8.7.12,<8.8.1,<8.8.4",
+                "drupal/drupal": "<8.0.0-beta2,<8.0.4,<8.1.3,<8.1.7,<8.1.10,<8.2.3,<8.2.7,<8.2.8,<8.3.1,<8.3.4,<8.3.7,<8.3.9,<8.4.6,<8.4.7,<8.4.8,<8.5.1,<8.5.2,<8.5.3,<8.5.6,<8.5.8,<8.5.9,<8.5.11,<8.5.14,<8.5.15,<8.6.2,<8.6.6,<8.6.10,<8.6.13,<8.6.15,<8.6.16,<8.7.0-rc1,<8.7.1,<8.7.5,<8.7.11,<8.7.12,<8.7.14,<8.8.1,<8.8.4,<8.8.6",
                 "drupal/ds": "<2.7,<3.0",
                 "drupal/dynamic_entity_reference": "<1.0-beta2",
                 "drupal/echo": "<1.7",
@@ -10273,6 +10287,7 @@
                 "drupal/nodeaccess": "<1.0-beta3",
                 "drupal/nodejs": "<1.0",
                 "drupal/oauth": "<2.1",
+                "drupal/open_readspeaker": "<1.5",
                 "drupal/opigno_forum": "<1.2",
                 "drupal/opigno_learning_path": "<1.4",
                 "drupal/panels": "<3.0-beta5",
@@ -10282,7 +10297,7 @@
                 "drupal/phpconfig": "<1.1",
                 "drupal/piwik": "<1.1",
                 "drupal/preview_link": "<1.1",
-                "drupal/prlp": "<1.3",
+                "drupal/prlp": "<1.3,<1.5",
                 "drupal/profile": "<1.1",
                 "drupal/protected_pages": "<1.1",
                 "drupal/readonlymode": "<1.0",
@@ -10318,7 +10333,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities",
-            "time": "2020-05-13T18:10:40+00:00"
+            "time": "2020-06-10T18:09:39+00:00"
         },
         {
             "name": "drupal/coder",
@@ -11826,12 +11841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "9b0501ceb2d00bea5814316c5333d513d7622ed5"
+                "reference": "499fb201e495ef0064da064f520c845d3638fe24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/9b0501ceb2d00bea5814316c5333d513d7622ed5",
-                "reference": "9b0501ceb2d00bea5814316c5333d513d7622ed5",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/499fb201e495ef0064da064f520c845d3638fe24",
+                "reference": "499fb201e495ef0064da064f520c845d3638fe24",
                 "shasum": ""
             },
             "conflict": {
@@ -11840,12 +11855,14 @@
                 "alterphp/easyadmin-extension-bundle": ">=1.2,<1.2.11|>=1.3,<1.3.1",
                 "amphp/artax": "<1.0.6|>=2,<2.0.6",
                 "amphp/http": "<1.0.1",
+                "amphp/http-client": ">=4,<4.4",
                 "api-platform/core": ">=2.2,<2.2.10|>=2.3,<2.3.6",
                 "asymmetricrypt/asymmetricrypt": ">=0,<9.9.99",
                 "aws/aws-sdk-php": ">=3,<3.2.1",
                 "bagisto/bagisto": "<0.1.5",
-                "barrelstrength/sprout-base-email": "<3.9",
-                "bolt/bolt": "<3.6.10",
+                "barrelstrength/sprout-base-email": "<1.2.7",
+                "barrelstrength/sprout-forms": "<3.9",
+                "bolt/bolt": "<3.7.1",
                 "brightlocal/phpwhois": "<=4.2.5",
                 "buddypress/buddypress": "<5.1.2",
                 "bugsnag/bugsnag-laravel": ">=2,<2.0.2",
@@ -11871,10 +11888,10 @@
                 "doctrine/mongodb-odm": ">=1,<1.0.2",
                 "doctrine/mongodb-odm-bundle": ">=2,<3.0.1",
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1",
-                "dolibarr/dolibarr": "<=10.0.6",
+                "dolibarr/dolibarr": "<11.0.4",
                 "dompdf/dompdf": ">=0.6,<0.6.2",
-                "drupal/core": ">=7,<7.69|>=8,<8.7.12|>=8.8,<8.8.4",
-                "drupal/drupal": ">=7,<7.69|>=8,<8.7.12|>=8.8,<8.8.4",
+                "drupal/core": ">=7,<7.70|>=8,<8.7.14|>=8.8,<8.8.6",
+                "drupal/drupal": ">=7,<7.70|>=8,<8.7.14|>=8.8,<8.8.6",
                 "endroid/qr-code-bundle": "<3.4.2",
                 "enshrined/svg-sanitize": "<0.13.1",
                 "erusev/parsedown": "<1.7.2",
@@ -11884,8 +11901,9 @@
                 "ezsystems/ezplatform": ">=1.7,<1.7.9.1|>=1.13,<1.13.5.1|>=2.5,<2.5.4",
                 "ezsystems/ezplatform-admin-ui": ">=1.3,<1.3.5|>=1.4,<1.4.6",
                 "ezsystems/ezplatform-admin-ui-assets": ">=4,<4.2",
+                "ezsystems/ezplatform-kernel": ">=1,<1.0.2.1",
                 "ezsystems/ezplatform-user": ">=1,<1.0.1",
-                "ezsystems/ezpublish-kernel": ">=5.3,<5.3.12.1|>=5.4,<5.4.14.1|>=6,<6.7.9.1|>=6.8,<6.13.6.2|>=7,<7.2.4.1|>=7.3,<7.3.2.1|>=7.5,<7.5.6.2",
+                "ezsystems/ezpublish-kernel": ">=5.3,<5.3.12.1|>=5.4,<5.4.14.2|>=6,<6.7.9.1|>=6.8,<6.13.6.3|>=7,<7.2.4.1|>=7.3,<7.3.2.1|>=7.5,<7.5.7.1",
                 "ezsystems/ezpublish-legacy": ">=5.3,<5.3.12.6|>=5.4,<5.4.14.1|>=2011,<2017.12.7.2|>=2018.6,<2018.6.1.4|>=2018.9,<2018.9.1.3|>=2019.3,<2019.3.4.2",
                 "ezsystems/repository-forms": ">=2.3,<2.3.2.1",
                 "ezyang/htmlpurifier": "<4.1.1",
@@ -11923,6 +11941,7 @@
                 "monolog/monolog": ">=1.8,<1.12",
                 "namshi/jose": "<2.2",
                 "nzo/url-encryptor-bundle": ">=4,<4.3.2|>=5,<5.0.1",
+                "october/october": ">=1.0.319,<1.0.466",
                 "onelogin/php-saml": "<2.10.4",
                 "oneup/uploader-bundle": "<1.9.3|>=2,<2.1.5",
                 "openid/php-openid": "<2.3",
@@ -11934,7 +11953,8 @@
                 "paypal/merchant-sdk-php": "<3.12",
                 "pear/archive_tar": "<1.4.4",
                 "phpfastcache/phpfastcache": ">=5,<5.0.13",
-                "phpmailer/phpmailer": ">=5,<5.2.27|>=6,<6.0.6",
+                "phpmailer/phpmailer": "<6.1.6",
+                "phpmussel/phpmussel": ">=1,<1.6",
                 "phpmyadmin/phpmyadmin": "<4.9.2",
                 "phpoffice/phpexcel": "<1.8.2",
                 "phpoffice/phpspreadsheet": "<1.8",
@@ -11949,6 +11969,7 @@
                 "propel/propel": ">=2-alpha.1,<=2-alpha.7",
                 "propel/propel1": ">=1,<=1.7.1",
                 "pusher/pusher-php-server": "<2.2.1",
+                "rainlab/debugbar-plugin": "<3.1",
                 "robrichards/xmlseclibs": "<3.0.4",
                 "sabre/dav": ">=1.6,<1.6.99|>=1.7,<1.7.11|>=1.8,<1.8.9",
                 "scheb/two-factor-bundle": ">=0,<3.26|>=4,<4.11",
@@ -12087,7 +12108,17 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2020-05-14T00:01:29+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/Ocramius",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/roave/security-advisories",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-17T06:37:54+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
