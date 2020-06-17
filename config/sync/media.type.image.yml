@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - crop
+    - google_cloud_vision_media
     - media_upload
 third_party_settings:
   crop:
@@ -11,6 +12,11 @@ third_party_settings:
   media_upload:
     upload_target_field: field_image
     enabled: 1
+  google_cloud_vision_media:
+    enabled: true
+    label_tag_field: field_keywords
+    source: source
+    image_style: other_hi_res_no_badge
 _core:
   default_config_hash: tJ2ym4qS2OWZUwhFzNDif5N4lyPENezrEOD8okJGrfs
 id: image
