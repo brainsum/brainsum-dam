@@ -19,14 +19,14 @@ bundle: video
 mode: default
 content:
   field_keywords:
-    weight: 4
+    weight: 6
     settings:
+      width: 100%
+      autocomplete: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
       match_limit: 10
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: select2_entity_reference
     region: content
   field_video:
     type: video_embed_field_textfield
