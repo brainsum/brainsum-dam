@@ -326,7 +326,6 @@ display:
         - user.permissions
       tags:
         - 'config:core.entity_view_display.media.image.default'
-        - 'config:core.entity_view_display.media.image.entity_browser'
         - 'config:core.entity_view_display.media.image.media_library'
         - 'config:core.entity_view_display.media.audio.collection_item'
         - 'config:core.entity_view_display.media.audio.default'
@@ -348,6 +347,7 @@ display:
         - 'config:core.entity_view_display.media.icon.shared_collection_item'
         - 'config:core.entity_view_display.media.image.collection_item'
         - 'config:core.entity_view_display.media.image.embed'
+        - 'config:core.entity_view_display.media.image.entity_browser'
         - 'config:core.entity_view_display.media.image.shared_collection_item'
         - 'config:core.entity_view_display.media.logo.collection_item'
         - 'config:core.entity_view_display.media.logo.default'
@@ -525,10 +525,22 @@ display:
           clear_on_exposed: true
           action_title: Action
           selected_actions:
-            -
+            0:
               action_id: google_cloud_vision_annotate
               preconfiguration:
                 label_override: 'Add keywords automatically'
+            2:
+              action_id: 'entity:publish_action:media'
+              preconfiguration:
+                label_override: Publish
+            3:
+              action_id: 'entity:delete_action:media'
+              preconfiguration:
+                label_override: Delete
+            4:
+              action_id: 'entity:unpublish_action:media'
+              preconfiguration:
+                label_override: Unpublish
           plugin_id: views_bulk_operations_bulk_form
       filters:
         name:
