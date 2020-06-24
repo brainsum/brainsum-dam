@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Hooks for damo_select2.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function damo_select2_form_alter(array &$form, FormStateInterface $form_state, string $form_id) {
+  if ($form_id === 'media_upload_bulk_upload_form') {
+    $form['keywords']['#type'] = 'select2';
+    $form['keywords']['#description'] = t("Drag to re-order keywords.");
+    $form['keywords']['#selection_settings']['match_limit'] = 10;
+    $form['keywords']['#autocomplete'] = TRUE;
+    $form['keywords']['#multiple'] = TRUE;
+    $form['keywords']['#autocreate']['uid'] = Drupal::currentUser()->id();
+  }
+}
