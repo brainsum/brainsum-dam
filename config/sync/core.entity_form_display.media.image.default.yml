@@ -19,6 +19,7 @@ dependencies:
     - focal_point
     - jquery_ui_datepicker
     - path
+    - select2
 _core:
   default_config_hash: plXtr0aWvvGW5fjFok9MZWArLKzr8EG241UcI1WEJKY
 id: media.image.default
@@ -97,12 +98,12 @@ content:
   field_keywords:
     weight: 6
     settings:
+      width: 100%
+      autocomplete: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
       match_limit: 10
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: select2_entity_reference
     region: content
   langcode:
     type: language_select
