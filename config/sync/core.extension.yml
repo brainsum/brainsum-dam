@@ -19,7 +19,6 @@ module:
   damo_assets_thumbnails: 0
   damo_common: 0
   damo_image_media_styles_preview: 0
-  damo_select2: 0
   datetime: 0
   dblog: 0
   dropzonejs: 0
