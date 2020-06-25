@@ -25,6 +25,15 @@ class KeywordLabelFormatter extends EntityReferenceLabelFormatter {
   /**
    * {@inheritdoc}
    */
+  public function settingsSummary() {
+    $summary = [];
+    $summary[] = $this->getSetting('link') ? $this->t('Link to the frontpage') : $this->t('No link');
+    return $summary;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function settingsForm(array $form, FormStateInterface $form_state) {
     $elements['link'] = [
       '#title' => $this->t('Link label to the frontpage as a search string'),

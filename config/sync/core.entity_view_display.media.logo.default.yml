@@ -9,6 +9,7 @@ dependencies:
     - field.field.media.logo.field_logo_description
     - media.type.logo
   module:
+    - damo_customization
     - text
 _core:
   default_config_hash: e8N6WhX-DbujqxZ11Jp2VJjrzBhvB4HOhPZYxhbaEsI
@@ -18,12 +19,12 @@ bundle: logo
 mode: default
 content:
   field_keywords:
-    type: entity_reference_label
+    type: keyword_label
     weight: 1
     region: content
     label: inline
     settings:
-      link: false
+      link: '1'
     third_party_settings: {  }
   field_logo_description:
     weight: 2

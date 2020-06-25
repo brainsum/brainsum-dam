@@ -9,6 +9,7 @@ dependencies:
     - field.field.media.template.field_template_file
     - media.type.template
   module:
+    - damo_customization
     - text
 _core:
   default_config_hash: f9fyhE9qAdPIS_NlwzmlU1pVhrvHpjBcexRTvn_HIKA
@@ -18,12 +19,12 @@ bundle: template
 mode: default
 content:
   field_keywords:
-    type: entity_reference_label
+    type: keyword_label
     weight: 1
     region: content
     label: inline
     settings:
-      link: false
+      link: '1'
     third_party_settings: {  }
   field_template_description:
     weight: 2

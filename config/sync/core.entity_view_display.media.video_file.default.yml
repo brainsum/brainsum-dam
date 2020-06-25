@@ -7,6 +7,8 @@ dependencies:
     - field.field.media.video_file.field_keywords
     - field.field.media.video_file.field_video_file
     - media.type.video_file
+  module:
+    - damo_customization
 _core:
   default_config_hash: TFyq7dXIbkl67J67W1P99h59JQFkxldaK7G4_YjNwe0
 id: media.video_file.default
@@ -18,9 +20,9 @@ content:
     weight: 3
     label: inline
     settings:
-      link: false
+      link: '1'
     third_party_settings: {  }
-    type: entity_reference_label
+    type: keyword_label
     region: content
   name:
     label: hidden

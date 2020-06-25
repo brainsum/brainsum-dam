@@ -8,6 +8,8 @@ dependencies:
     - field.field.media.icon.field_file
     - field.field.media.icon.field_keywords
     - media.type.icon
+  module:
+    - damo_customization
 _core:
   default_config_hash: t-3mPPBVPalzGcOnqQNsSmaFC79rVX3gtfCSegzeKFs
 id: media.icon.default
@@ -23,12 +25,12 @@ content:
     type: basic_string
     region: content
   field_keywords:
-    type: entity_reference_label
+    type: keyword_label
     weight: 1
     region: content
     label: inline
     settings:
-      link: false
+      link: '1'
     third_party_settings: {  }
   name:
     label: hidden

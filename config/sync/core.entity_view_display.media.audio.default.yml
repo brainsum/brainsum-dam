@@ -8,6 +8,8 @@ dependencies:
     - field.field.media.audio.field_file
     - field.field.media.audio.field_keywords
     - media.type.audio
+  module:
+    - damo_customization
 _core:
   default_config_hash: Wsng5z2Gb6w3TpcLyJAnHUxjyJ0MLg5EmEJiRuuswiA
 id: media.audio.default
@@ -26,9 +28,9 @@ content:
     weight: 1
     label: inline
     settings:
-      link: false
+      link: '1'
     third_party_settings: {  }
-    type: entity_reference_label
+    type: keyword_label
     region: content
   name:
     type: string
