@@ -1,0 +1,26 @@
+diff --git a/damo_theme.theme b/damo_theme.theme
+index bdd6c71..6f7480b 100644
+--- a/damo_theme.theme
++++ b/damo_theme.theme
+@@ -97,7 +97,7 @@ function damo_theme_preprocess(&$variables, $hook) {
+ 
+   $variables['damo_base'] = [
+     'root' => $base_theme_path,
+-    'logo' => $base_theme_path . '/logo.png', // @todo Don't hardcode .svg
++    'logo' => base_path() . 'assets/logo.png',
+     'templates' => $base_theme_path . '/templates',
+     'partials' => $base_theme_path . '/templates/_partials',
+     'images' => $base_theme_path . '/images',
+diff --git a/templates/maintenance-page.html.twig b/templates/maintenance-page.html.twig
+index e3eec62..15b2808 100644
+--- a/templates/maintenance-page.html.twig
++++ b/templates/maintenance-page.html.twig
+@@ -14,7 +14,7 @@
+ <div class="wrapper">
+   <div class="logo">
+     <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+-      <img src="/themes/custom/damo_theme/logo.png" alt="{{ 'Home'|t }}"/>
++      <img src="/assets/logo.png" alt="{{ 'Home'|t }}"/>
+     </a>
+   </div>
+   <div class="content">

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f0b7ef1eaa609fa0f6675310b2c4967",
+    "content-hash": "c617e0ff1d6e30bf786a6d41ae4a12e9",
     "packages": [
         {
             "name": "alchemy/binary-driver",
@@ -273,6 +273,11 @@
                 "drupal/core": "^8.7 | ^9.0"
             },
             "type": "drupal-theme",
+            "extra": {
+                "patches_applied": {
+                    "Replace logo paths.": "patches/damo-theme.logo-replace.patch"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"

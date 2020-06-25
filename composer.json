@@ -59,6 +59,9 @@
         "enable-patching": true,
         "composer-exit-on-patch-failure": true,
         "patches": {
+            "brainsum/damo_theme": {
+                "Replace logo paths.": "patches/damo-theme.logo-replace.patch"
+            },
             "drupal/google_cloud_vision": {
                 "S3FS compatibility of fopen().": "https://www.drupal.org/files/issues/2020-05-25/fopen-user-error-when-using-s3fs-13644864-3.patch"
             }
