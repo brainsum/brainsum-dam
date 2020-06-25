@@ -48,7 +48,6 @@ field_settings:
         - field.storage.media.field_file
       module:
         - file
-        - file
   files_filename:
     label: 'Files Filename'
     datasource_id: 'entity:media'
@@ -58,7 +57,6 @@ field_settings:
       config:
         - field.storage.media.field_files
       module:
-        - file
         - file
   image_filename:
     label: 'Image Filename'
@@ -70,7 +68,6 @@ field_settings:
         - field.storage.media.field_image
       module:
         - file
-        - file
   images_filename:
     label: 'Images Filename'
     datasource_id: 'entity:media'
@@ -80,7 +77,6 @@ field_settings:
       config:
         - field.storage.media.field_images
       module:
-        - file
         - file
   media_bundle:
     label: 'Media type'
@@ -116,7 +112,6 @@ field_settings:
         - field.storage.media.field_keywords
       module:
         - taxonomy
-        - taxonomy
   media_name:
     label: 'Media Name'
     datasource_id: 'entity:media'
@@ -143,7 +138,6 @@ field_settings:
         - field.storage.media.field_template_file
       module:
         - file
-        - file
   video_filename:
     label: 'Video Filename'
     datasource_id: 'entity:media'
@@ -153,7 +147,6 @@ field_settings:
       config:
         - field.storage.media.field_video_file
       module:
-        - file
         - file
 datasource_settings:
   'entity:media':
@@ -166,9 +159,36 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  ignore_character:
+    all_fields: false
+    fields:
+      - file_filename
+      - files_filename
+      - image_filename
+      - images_filename
+      - media_bundle
+      - media_keywords_name
+      - media_name
+      - template_filename
+      - video_filename
+    ignorable: '[''¿¡!?,.:;]'
+    ignorable_classes:
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+      - Zl
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
   language_with_fallback: {  }
   rendered_item: {  }
-  solr_date_range: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
 tracker_settings:
   default:
     indexing_order: fifo
