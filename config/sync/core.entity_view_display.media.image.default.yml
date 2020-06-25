@@ -27,15 +27,14 @@ third_party_settings:
         - field_gps_gpslatitude
         - field_gps_gpslongitude
       parent_name: ''
-      weight: 10
+      weight: 4
       format_type: fieldset
       format_settings:
-        label: 'EXIF meta data'
         description: ''
         id: ''
         classes: exif-meta-data
       label: 'EXIF meta data'
-      region: hidden
+      region: content
 _core:
   default_config_hash: 2gzwcBr9CYQ4Ty996O7q_7nJFhCEHnvUU0Q6IabA5us
 id: media.image.default
@@ -52,8 +51,8 @@ content:
     third_party_settings: {  }
     region: content
   field_expiration_date:
-    weight: 4
-    label: above
+    weight: 3
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -61,39 +60,39 @@ content:
     type: datetime_default
     region: content
   field_gps_gpslatitude:
-    weight: 10
-    label: above
+    weight: 5
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_gps_gpslongitude:
-    weight: 11
-    label: above
+    weight: 6
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_iptc_by_line:
-    weight: 9
-    label: above
+    weight: 4
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_iptc_caption:
-    weight: 8
-    label: above
+    weight: 3
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_iptc_object_name:
-    weight: 7
-    label: above
+    weight: 2
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
