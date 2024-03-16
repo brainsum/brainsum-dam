@@ -5,7 +5,7 @@ version: "2.4"
 
 services:
   mariadb:
-    image: wodby/mariadb:10.4-3.7.1
+    image: wodby/mariadb:10.4-3.7.6
     stop_grace_period: 30s
     environment:
       MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
