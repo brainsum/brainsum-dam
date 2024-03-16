@@ -20,26 +20,26 @@ mode: default
 content:
   field_keywords:
     type: keyword_label
-    weight: 1
-    region: content
     label: inline
     settings:
       link: '1'
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_logo_description:
-    weight: 2
+    type: text_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
   name:
     type: string
-    weight: 0
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true

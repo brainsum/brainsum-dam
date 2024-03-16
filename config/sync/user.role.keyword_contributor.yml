@@ -1,7 +1,17 @@
 uuid: 285e08fe-3df2-4756-9fa2-15467f878ead
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - taxonomy.vocabulary.category
+    - taxonomy.vocabulary.keyword
+  module:
+    - file
+    - media
+    - media_collection
+    - taxonomy
+    - taxonomy_access_fix
+    - toolbar
 _core:
   default_config_hash: XD0KB8Eh0O2_AFAYueDn6hW1yfEFLOgDJX5ofSAO23I
 id: keyword_contributor
@@ -9,19 +19,18 @@ label: 'Keyword contributor'
 weight: 3
 is_admin: null
 permissions:
-  - 'access shortcuts'
   - 'access toolbar'
-  - 'add terms in category'
-  - 'add terms in keyword'
+  - 'delete own files'
   - 'edit terms in category'
   - 'edit terms in keyword'
-  - 'publish any media'
-  - 'unpublish any media'
+  - 'select terms in category'
+  - 'select terms in keyword'
   - 'update any media'
   - 'update media'
-  - 'view any published media'
   - 'view media'
   - 'view shared media collection entities'
   - 'view shared media collection item entities'
+  - 'view term names in category'
+  - 'view term names in keyword'
   - 'view terms in category'
   - 'view terms in keyword'

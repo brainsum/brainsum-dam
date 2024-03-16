@@ -8,8 +8,6 @@ dependencies:
     - field.field.media.video_file.field_keywords
     - field.field.media.video_file.field_video_file
     - media.type.video_file
-  module:
-    - media_entity_video
 _core:
   default_config_hash: DSJvhBFe-0n3cZ_iTzQrTnxh6xh9iCPWPthem86JEKc
 id: media.video_file.embed
@@ -18,13 +16,15 @@ bundle: video_file
 mode: embed
 content:
   field_video_file:
-    weight: 3
+    type: file_video
     label: hidden
     settings:
-      video_attributes: 'controls preload="auto"'
-      provide_download_link: 0
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
     third_party_settings: {  }
-    type: video_player_html5
+    weight: 3
     region: content
 hidden:
   created: true

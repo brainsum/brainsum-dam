@@ -1,24 +1,24 @@
-uuid: 4281bcdb-68bf-4410-be7e-7f011073b670
+uuid: 0f16d614-a6a6-43ad-871d-fd57dd2bc548
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.admin
-  enforced:
-    module:
-      - maillog
   module:
     - maillog
     - user
+  enforced:
+    module:
+      - maillog
 _core:
-  default_config_hash: xIWnQFTLGRl3acWbXmZu40wDJDJd5iAeDhVwVJqDEOA
+  default_config_hash: xQe_9UDnOYMgxHaQU_vAbBAt_2NfDnyCjJ_ue6vh_uA
 id: maillog_overview
 label: 'Maillog overview'
 module: views
 description: ''
 tag: ''
 base_table: maillog
-base_field: idmaillog
+base_field: id
 display:
   default:
     display_plugin: default
@@ -83,13 +83,13 @@ display:
           summary: ''
           description: ''
           columns:
-            idmaillog: idmaillog
+            id: id
             sent_date: sent_date
             subject: subject
             header_from: header_from
             header_to: header_to
           info:
-            idmaillog:
+            id:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -129,10 +129,10 @@ display:
       row:
         type: fields
       fields:
-        idmaillog:
-          id: idmaillog
+        id:
+          id: id
           table: maillog
-          field: idmaillog
+          field: id
           relationship: none
           group_type: group
           admin_label: ''
@@ -243,7 +243,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: '/maillog/details/{{idmaillog}}'
+            path: '/admin/reports/maillog/details/{{id}}'
             absolute: false
             external: false
             replace_spaces: false
@@ -416,7 +416,7 @@ display:
         - url.query_args
         - user.permissions
       cacheable: false
-      max-age: -1
+      max-age: 0
       tags: {  }
   page_1:
     display_plugin: page
@@ -440,5 +440,5 @@ display:
         - url.query_args
         - user.permissions
       cacheable: false
-      max-age: -1
+      max-age: 0
       tags: {  }

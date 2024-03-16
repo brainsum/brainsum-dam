@@ -1,7 +1,10 @@
 uuid: 9af967ef-5076-4dd0-b9bb-8aa6b002656c
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - file
+    - media_collection
 _core:
   default_config_hash: XmRCIunNhQYUb4ulClG1oyDFb3Ui6PiesNl-QO-7s0U
 id: maintainer
@@ -9,5 +12,6 @@ label: Maintainer
 weight: 8
 is_admin: null
 permissions:
+  - 'delete own files'
   - 'view shared media collection entities'
   - 'view shared media collection item entities'

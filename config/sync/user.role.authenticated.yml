@@ -1,7 +1,20 @@
 uuid: 2d00a372-04d5-4c43-b180-212e16387b85
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - damo_assets
+    - damo_assets_library
+    - file
+    - filter
+    - media
+    - media_collection
+    - media_collection_share
+    - node
+    - system
+    - userprotect
 _core:
   default_config_hash: mfLhKZJSHSdIfXggcc_xV4BafOXrJVWN8KjNFTl3tBo
 id: authenticated
@@ -10,29 +23,22 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
-  - 'access gallery_media_library entity browser pages'
   - 'access media asset library'
   - 'access media asset navigation block'
-  - 'access site-wide contact form'
-  - 'add marketing activity entities'
   - 'add media collection (shared) entities'
   - 'add media collection entities'
   - 'add media collection item entities'
-  - 'add upload entities'
-  - 'create gdpr tasks'
   - 'delete media collection (shared) entities'
+  - 'delete own files'
   - 'delete own media collection entities'
   - 'delete own media collection item entities'
   - 'edit media collection (shared) entities'
   - 'edit own media collection entities'
   - 'edit own media collection item entities'
-  - 'restful get entity:marketing_activity'
   - 'use text format restricted_html'
   - userprotect.account.edit
   - userprotect.mail.edit
   - userprotect.pass.edit
-  - 'view gdpr data summary'
-  - 'view gdpr tasks'
   - 'view media'
   - 'view own media collection entities'
   - 'view own media collection item entities'

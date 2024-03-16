@@ -18,20 +18,20 @@ bundle: video
 mode: default
 content:
   field_keywords:
-    weight: 4
+    type: keyword_label
     label: inline
     settings:
       link: '1'
     third_party_settings: {  }
-    type: keyword_label
+    weight: 4
     region: content
   name:
-    label: hidden
     type: string
-    weight: 0
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true

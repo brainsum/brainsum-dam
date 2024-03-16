@@ -8,5 +8,6 @@ _core:
   default_config_hash: rkTEmPB-0JjkU_R4YxEmdT4-FtS4SI8i-nI_axctPx8
 id: media_collection_item.shared
 label: Shared
+description: ''
 targetEntityType: media_collection_item
 cache: true

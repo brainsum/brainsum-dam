@@ -3,9 +3,8 @@ langcode: en
 status: true
 dependencies:
   module:
-    - crop
-    - media_entity_video
-    - media_upload
+    0: crop
+    2: media_upload
 third_party_settings:
   crop:
     image_field: field_video_file
@@ -17,7 +16,7 @@ _core:
 id: video_file
 label: 'Video file'
 description: 'Use Video file for uploading locally hosted videos.'
-source: video
+source: video_file
 queue_thumbnail_downloads: false
 new_revision: true
 source_configuration:

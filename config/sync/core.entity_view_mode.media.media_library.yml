@@ -8,5 +8,6 @@ _core:
   default_config_hash: qLq2_M2q-C2cdeBJD42s3O0wLSpCbmWaxPWFMK3vwcI
 id: media.media_library
 label: 'Media Library'
+description: ''
 targetEntityType: media
 cache: true

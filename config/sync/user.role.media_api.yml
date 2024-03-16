@@ -1,7 +1,16 @@
 uuid: 2728c720-cf3d-489a-92fb-2eacbd90ab3c
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - taxonomy.vocabulary.category
+    - taxonomy.vocabulary.keyword
+  module:
+    - file
+    - media_collection
+    - system
+    - taxonomy
+    - taxonomy_access_fix
 _core:
   default_config_hash: N-jNdSAgJMpemxecq6rf4oQIHij29fzJgwOXGr7Xa3Y
 id: media_api
@@ -10,14 +19,14 @@ weight: 4
 is_admin: null
 permissions:
   - 'access content'
-  - 'access tml jsonapi resources'
-  - 'add terms in category'
-  - 'add terms in keyword'
+  - 'delete own files'
   - 'edit terms in category'
   - 'edit terms in keyword'
-  - 'restful get tml_media_library'
-  - 'view any published media'
+  - 'select terms in category'
+  - 'select terms in keyword'
   - 'view shared media collection entities'
   - 'view shared media collection item entities'
+  - 'view term names in category'
+  - 'view term names in keyword'
   - 'view terms in category'
   - 'view terms in keyword'

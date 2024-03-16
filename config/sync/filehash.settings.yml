@@ -1,7 +1,9 @@
-algos:
-  sha1: sha1
-  md5: '0'
-  sha256: '0'
-dedupe: true
 _core:
   default_config_hash: V3ulwBSb67S5rXWYPoTxUclL7J68U9ebpzj5z3lfigk
+algos:
+  md5: '0'
+  sha1: sha1
+  sha256: '0'
+dedupe: 1
+rehash: true
+autohash: true

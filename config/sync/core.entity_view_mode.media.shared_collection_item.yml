@@ -8,5 +8,6 @@ _core:
   default_config_hash: RsQUUMEsrm_ZUtJf6vKtknxBy36pssHEheMfwj5LHcA
 id: media.shared_collection_item
 label: 'Shared collection item'
+description: ''
 targetEntityType: media
 cache: true

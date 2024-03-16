@@ -15,54 +15,54 @@ content:
   media:
     type: inline_entity_form_complex
     weight: 1
+    region: content
     settings:
-      match_operator: CONTAINS
       form_mode: default
       override_labels: false
       label_singular: ''
       label_plural: ''
-      collapsible: false
-      collapsed: false
       allow_new: true
       allow_existing: false
+      match_operator: CONTAINS
       allow_duplicate: false
-    region: content
+      collapsible: false
+      collapsed: false
     third_party_settings: {  }
   parent:
     type: entity_reference_autocomplete
     weight: 5
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   shared_parent:
     type: entity_reference_autocomplete
     weight: 5
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
   style:
     type: options_select
     weight: 2
-    settings: {  }
     region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 5
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
 hidden:
   langcode: true

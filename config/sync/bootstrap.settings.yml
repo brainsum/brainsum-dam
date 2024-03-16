@@ -1,5 +1,5 @@
-schemas:
-  bootstrap: 8000
+_core:
+  default_config_hash: OO_mY0-hSpIK1ow3Gbp80tW-jZ4546py02xiPJfKszU
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
@@ -14,5 +14,5 @@ logo:
   path: ''
   url: ''
   use_default: true
-_core:
-  default_config_hash: OO_mY0-hSpIK1ow3Gbp80tW-jZ4546py02xiPJfKszU
+schemas:
+  bootstrap: 8000

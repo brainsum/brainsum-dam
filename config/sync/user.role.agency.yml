@@ -1,7 +1,28 @@
 uuid: 17165c81-5127-4b21-8302-68486045d90f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - media.type.guideline
+    - media.type.icon
+    - media.type.image
+    - media.type.logo
+    - media.type.template
+    - media.type.video
+    - media.type.video_file
+    - taxonomy.vocabulary.category
+    - taxonomy.vocabulary.keyword
+  module:
+    - dropzonejs
+    - entity_browser
+    - file
+    - media
+    - media_collection
+    - media_collection_share
+    - media_upload
+    - taxonomy
+    - taxonomy_access_fix
+    - toolbar
 _core:
   default_config_hash: WvKixCzTVYWCFcrMkUBtnLT0YKCodmKm0VHE5ieWN8o
 id: agency
@@ -16,8 +37,6 @@ permissions:
   - 'add media collection (shared) entities'
   - 'add media collection entities'
   - 'add media collection item entities'
-  - 'add terms in category'
-  - 'add terms in keyword'
   - 'create guideline media'
   - 'create icon media'
   - 'create image media'
@@ -27,6 +46,7 @@ permissions:
   - 'create video media'
   - 'create video_file media'
   - 'delete media'
+  - 'delete own files'
   - 'delete own guideline media'
   - 'delete own icon media'
   - 'delete own image media'
@@ -49,15 +69,17 @@ permissions:
   - 'edit own video_file media'
   - 'edit terms in category'
   - 'edit terms in keyword'
-  - 'unpublish own media'
+  - 'select terms in category'
+  - 'select terms in keyword'
   - 'update media'
   - 'upload media'
   - 'view media'
   - 'view own media collection entities'
   - 'view own media collection item entities'
-  - 'view own published media'
   - 'view own unpublished media'
   - 'view shared media collection entities'
   - 'view shared media collection item entities'
+  - 'view term names in category'
+  - 'view term names in keyword'
   - 'view terms in category'
   - 'view terms in keyword'

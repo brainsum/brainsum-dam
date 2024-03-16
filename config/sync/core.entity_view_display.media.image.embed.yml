@@ -26,12 +26,14 @@ mode: embed
 content:
   field_image:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: thumbnail
       image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true

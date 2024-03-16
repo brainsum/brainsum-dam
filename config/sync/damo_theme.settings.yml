@@ -1,3 +1,19 @@
+_core:
+  default_config_hash: bJANeWSq0eqUZr9Ue_KBRbA1zphAPrHoxQIcQnqqsJY
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: /themes/contrib/bootstrap/favicon.ico
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: false
+logo:
+  path: 'private://brainsum-dam-logo-v3_03.png'
+  url: ''
+  use_default: true
 cdn_provider: ''
 navbar_inverse: 1
 navbar_position: static-top
@@ -25,18 +41,9 @@ popover_selector: '[data-toggle="popover"]'
 popover_title: Help
 tooltip_placement: 'auto top'
 tooltip_selector: '[data-toggle="tooltip"]'
-favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: ''
-  url: /themes/contrib/bootstrap/favicon.ico
-  use_default: true
 schemas:
   bootstrap: 8000
   damo_theme: 8000
-logo:
-  path: 'private://brainsum-dam-logo-v3_03.png'
-  url: ''
-  use_default: true
 cdn_theme: ''
 cdn_cache_ttl_versions: 0
 cdn_cache_ttl_themes: 0
@@ -44,10 +51,3 @@ cdn_cache_ttl_assets: 0
 cdn_cache_ttl_library: 0
 reset_http_request_cache: ''
 table: ''
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: false
-_core:
-  default_config_hash: bJANeWSq0eqUZr9Ue_KBRbA1zphAPrHoxQIcQnqqsJY

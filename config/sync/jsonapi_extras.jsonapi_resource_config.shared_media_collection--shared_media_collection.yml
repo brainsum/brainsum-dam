@@ -12,62 +12,62 @@ path: shared_media_collection/shared_media_collection
 resourceType: shared_media_collection--shared_media_collection
 resourceFields:
   id:
+    disabled: false
     fieldName: id
     publicName: id
     enhancer:
       id: ''
-    disabled: false
   uuid:
+    disabled: false
     fieldName: uuid
     publicName: uuid
     enhancer:
       id: ''
-    disabled: false
   langcode:
+    disabled: false
     fieldName: langcode
     publicName: langcode
     enhancer:
       id: ''
-    disabled: false
   uid:
+    disabled: false
     fieldName: uid
     publicName: uid
     enhancer:
       id: ''
-    disabled: false
   created:
+    disabled: false
     fieldName: created
     publicName: created
     enhancer:
       id: ''
-    disabled: false
   items:
+    disabled: false
     fieldName: items
     publicName: items
     enhancer:
       id: ''
-    disabled: false
   url:
+    disabled: false
     fieldName: url
     publicName: url
     enhancer:
       id: ''
-    disabled: false
   emails:
+    disabled: false
     fieldName: emails
     publicName: emails
     enhancer:
       id: ''
-    disabled: false
   assets_archive:
+    disabled: false
     fieldName: assets_archive
     publicName: assets_archive
     enhancer:
       id: ''
-    disabled: false
   default_langcode:
+    disabled: false
     fieldName: default_langcode
     publicName: default_langcode
     enhancer:
       id: ''
-    disabled: false

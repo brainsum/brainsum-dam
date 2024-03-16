@@ -20,14 +20,14 @@ mode: embed
 content:
   field_video:
     type: video_embed_field_video
-    weight: 0
     label: hidden
     settings:
+      autoplay: false
       responsive: true
       width: 854
       height: 480
-      autoplay: false
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true

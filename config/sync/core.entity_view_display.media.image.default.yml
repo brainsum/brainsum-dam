@@ -27,15 +27,15 @@ third_party_settings:
         - field_iptc_by_line
         - field_gps_gpslatitude
         - field_gps_gpslongitude
+      label: 'EXIF meta data'
       parent_name: ''
+      region: content
       weight: 4
       format_type: fieldset
       format_settings:
-        description: ''
-        id: ''
         classes: exif-meta-data
-      label: 'EXIF meta data'
-      region: content
+        id: ''
+        description: ''
 _core:
   default_config_hash: 2gzwcBr9CYQ4Ty996O7q_7nJFhCEHnvUU0Q6IabA5us
 id: media.image.default
@@ -45,75 +45,75 @@ mode: default
 content:
   field_category:
     type: entity_reference_label
-    weight: 1
     label: inline
     settings:
       link: false
     third_party_settings: {  }
+    weight: 1
     region: content
   field_expiration_date:
-    weight: 3
+    type: datetime_default
     label: inline
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: datetime_default
+    weight: 3
     region: content
   field_gps_gpslatitude:
-    weight: 5
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 5
     region: content
   field_gps_gpslongitude:
-    weight: 6
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 6
     region: content
   field_iptc_by_line:
-    weight: 4
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 4
     region: content
   field_iptc_caption:
-    weight: 3
+    type: text_default
     label: inline
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 3
     region: content
   field_iptc_object_name:
-    weight: 2
+    type: string
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_keywords:
-    weight: 2
+    type: keyword_label
     label: inline
     settings:
       link: '1'
     third_party_settings: {  }
-    type: keyword_label
+    weight: 2
     region: content
   name:
-    label: hidden
     type: string
-    weight: 0
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true

@@ -1,10 +1,7 @@
+_core:
+  default_config_hash: T86L2D_nHfXg0vMXgvPIguR0lb7VgnsyPz9xLMjgxyk
 date_format_exif: null
 granularity: 0
-update_metadata: true
-write_empty_values: true
-extraction_solution: php_extensions
-exiftool_location: exiftool
-vocabulary: '0'
 mediatypes:
   image: image
   document: '0'
@@ -23,5 +20,8 @@ nodetypes:
   static_page: '0'
   website_content: '0'
 filetypes: {  }
-_core:
-  default_config_hash: T86L2D_nHfXg0vMXgvPIguR0lb7VgnsyPz9xLMjgxyk
+update_metadata: true
+vocabulary: '0'
+write_empty_values: true
+extraction_solution: php_extensions
+exiftool_location: exiftool

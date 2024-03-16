@@ -5,7 +5,7 @@ version: "2.4"
 
 services:
   mariadb:
-    image: wodby/mariadb:10.4-3.8.3
+    image: wodby/mariadb:10.4-3.7.1
     stop_grace_period: 30s
     environment:
       MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
@@ -14,7 +14,7 @@ services:
       MYSQL_PASSWORD: $DB_PASSWORD
 
   php:
-    image: brainsum/damo-php:7.4-dev-4.15.8
+    image: brainsum/damopen-php:8.1-dev-4.42.11
     environment:
       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
       DRUPAL_DATABASE_HOST: $DB_HOST
@@ -52,7 +52,7 @@ services:
       - ./:/var/www/html
 
   nginx:
-    image: wodby/nginx:1.17-5.8.15
+    image: wodby/nginx:1.25-5.33.5
     depends_on:
       - php
     environment:
@@ -60,7 +60,7 @@ services:
       NGINX_ERROR_LOG_LEVEL: debug
       NGINX_BACKEND_HOST: php
       NGINX_SERVER_ROOT: /var/www/html/web
-      NGINX_VHOST_PRESET: drupal8
+      NGINX_VHOST_PRESET: drupal10
       ## Custom
       NGINX_CLIENT_MAX_BODY_SIZE: "500m"
     volumes:

@@ -23,10 +23,10 @@ effects:
     id: image_effects_watermark
     weight: 2
     data:
+      watermark_image: profiles/contrib/damo-distribution/modules/damo_image_media_styles_preview/images/watermark/dam-logo.png
+      watermark_width: 20%
+      watermark_height: ''
       placement: right-bottom
       x_offset: ''
       y_offset: ''
       opacity: 100
-      watermark_image: profiles/contrib/damo-distribution/modules/damo_image_media_styles_preview/images/watermark/dam-logo.png
-      watermark_width: 20%
-      watermark_height: ''
