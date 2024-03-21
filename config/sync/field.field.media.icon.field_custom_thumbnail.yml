@@ -14,12 +14,14 @@ field_name: field_custom_thumbnail
 entity_type: media
 bundle: icon
 label: 'Custom thumbnail'
-description: 'If added, this image is going to be used as the thumbnail of this entity. Note, that after creating the icon you won''t be able the change the thumbnail.'
+description: "If added, this image is going to be used as the thumbnail of this entity. Note, that after creating the icon you won't be able the change the thumbnail."
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: 'media/icon/custom_thumbnail/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '10 MB'
@@ -35,6 +37,4 @@ settings:
     title: ''
     width: null
     height: null
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: image

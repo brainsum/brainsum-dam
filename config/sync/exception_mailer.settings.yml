@@ -1,7 +1,5 @@
-level_type:
-  EMERGENCY: EMERGENCY
-  ALERT: ALERT
-  CRITICAL: CRITICAL
-  ERROR: ERROR
 _core:
   default_config_hash: 6Fms8NpmKaBcAzGcdwGwPfTWvxamDUVQFxovRU80yYo
+level_type: {  }
+roles:
+  administrator: administrator

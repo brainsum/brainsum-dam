@@ -1,6 +1,6 @@
+_core:
+  default_config_hash: vU9xCEzruqnK8O57qvrmRlbPjmkY_Ta-s94D9WopAB0
 ffmpeg_binary: ''
 ffprobe_binary: ''
 execution_timeout: 15
 threads_amount: 0
-_core:
-  default_config_hash: vU9xCEzruqnK8O57qvrmRlbPjmkY_Ta-s94D9WopAB0

@@ -1,7 +1,7 @@
+_core:
+  default_config_hash: j9ZNKXE1tkDTJMQlrCdVk173OQHaRAMok0EJ5T1oJtQ
 allow_insecure_uploads: false
 default_scheme: private
 path:
   temporary: /tmp
 temporary_maximum_age: 0
-_core:
-  default_config_hash: j9ZNKXE1tkDTJMQlrCdVk173OQHaRAMok0EJ5T1oJtQ

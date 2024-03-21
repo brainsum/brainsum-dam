@@ -27,16 +27,16 @@ third_party_settings:
         - field_iptc_by_line
         - field_gps_gpslatitude
         - field_gps_gpslongitude
+      label: 'EXIF meta data'
       parent_name: ''
+      region: hidden
       weight: 10
       format_type: fieldset
       format_settings:
         label: 'EXIF meta data'
-        description: ''
-        id: ''
         classes: exif-meta-data
-      label: 'EXIF meta data'
-      region: hidden
+        id: ''
+        description: ''
 _core:
   default_config_hash: HU71z378WYcHxYyr7fPX6bx9k-WEJ1L7rbqC6LUKBPc
 id: media.image.shared_collection_item
@@ -46,36 +46,38 @@ mode: shared_collection_item
 content:
   field_category:
     type: entity_reference_label
-    weight: 2
     label: inline
     settings:
       link: false
     third_party_settings: {  }
+    weight: 2
     region: content
   field_keywords:
     type: entity_reference_label
-    weight: 3
     label: inline
     settings:
       link: false
     third_party_settings: {  }
+    weight: 3
     region: content
   name:
     type: string
-    weight: 1
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
     region: content
   thumbnail:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: gallery_item
       image_link: ''
+      image_style: gallery_item
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true

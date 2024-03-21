@@ -1,4 +1,11 @@
-interface:
-  default: maillog
 _core:
   default_config_hash: IqCIDL8vvuyeiqb4x3cClPn6dA-hOza4cOmvW3dHrDY
+interface:
+  default: maillog
+mailer_dsn:
+  scheme: sendmail
+  host: default
+  user: null
+  password: null
+  port: null
+  options: {  }

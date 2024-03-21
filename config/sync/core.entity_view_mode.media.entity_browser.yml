@@ -8,5 +8,6 @@ _core:
   default_config_hash: AC5t7lKrJoNIbVQ4dX7rEZCX0qwbney0G3LOz15e7KI
 id: media.entity_browser
 label: 'Entity browser'
+description: ''
 targetEntityType: media
 cache: true

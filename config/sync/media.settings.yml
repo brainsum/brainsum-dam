@@ -1,6 +1,6 @@
-icon_base_uri: 'public://media-icons/generic'
-standalone_url: true
-iframe_domain: ''
-oembed_providers_url: 'https://oembed.com/providers.json'
 _core:
   default_config_hash: ARfy5VfrfcLT1zIHx0KU8uRJRf8dzF1CS0KfhMK_pkE
+icon_base_uri: 'public://media-icons/generic'
+iframe_domain: null
+oembed_providers_url: 'https://oembed.com/providers.json'
+standalone_url: true

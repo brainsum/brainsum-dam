@@ -1,4 +1,4 @@
-admin: damo_theme
-default: damo_theme
 _core:
   default_config_hash: o9zm_O9disbrn_pljm2kdTRiDtyFVqUXpewjhBI9njc
+admin: damo_theme
+default: damo_theme

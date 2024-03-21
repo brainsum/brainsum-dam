@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: tahDNWFBuuoOzOXo4THp2ENoakY75zkcMAV4VcT7uR8
 display_denied_message: true
 access_denied_message: 'Access denied. You must log in to view this page.'
 access_denied_message_type: error
@@ -7,5 +9,3 @@ default_redirect_code: 302
 match_noredirect_pages: "/jsonapi/*\r\n/system/*"
 redirect_to_destination: false
 destination_parameter_override: ''
-_core:
-  default_config_hash: tahDNWFBuuoOzOXo4THp2ENoakY75zkcMAV4VcT7uR8

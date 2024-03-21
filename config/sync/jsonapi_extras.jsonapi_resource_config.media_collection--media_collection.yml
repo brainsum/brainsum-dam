@@ -12,44 +12,44 @@ path: media_collection/media_collection
 resourceType: media_collection--media_collection
 resourceFields:
   id:
+    disabled: false
     fieldName: id
     publicName: id
     enhancer:
       id: ''
-    disabled: false
   uuid:
+    disabled: false
     fieldName: uuid
     publicName: uuid
     enhancer:
       id: ''
-    disabled: false
   langcode:
+    disabled: false
     fieldName: langcode
     publicName: langcode
     enhancer:
       id: ''
-    disabled: false
   uid:
+    disabled: false
     fieldName: uid
     publicName: uid
     enhancer:
       id: ''
-    disabled: false
   created:
+    disabled: false
     fieldName: created
     publicName: created
     enhancer:
       id: ''
-    disabled: false
   items:
+    disabled: false
     fieldName: items
     publicName: items
     enhancer:
       id: ''
-    disabled: false
   default_langcode:
+    disabled: false
     fieldName: default_langcode
     publicName: default_langcode
     enhancer:
       id: ''
-    disabled: false

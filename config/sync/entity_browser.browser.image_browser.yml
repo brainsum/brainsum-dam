@@ -23,22 +23,22 @@ widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
   2d239ae9-15ab-4767-8b31-426c14f9027e:
+    id: view
+    uuid: 2d239ae9-15ab-4767-8b31-426c14f9027e
+    label: Browse
+    weight: -9
     settings:
-      view: media_library
-      view_display: media_image_select_modal
       submit_text: 'Select images'
       auto_select: false
-    uuid: 2d239ae9-15ab-4767-8b31-426c14f9027e
-    weight: -9
-    label: Browse
-    id: view
+      view: media_library
+      view_display: media_image_select_modal
   e596d94b-7382-4224-a97a-ccd7bb5aa0ae:
+    id: entity_form
+    uuid: e596d94b-7382-4224-a97a-ccd7bb5aa0ae
+    label: Upload
+    weight: -10
     settings:
+      submit_text: 'Save image'
       entity_type: media
       bundle: image
       form_mode: default
-      submit_text: 'Save image'
-    uuid: e596d94b-7382-4224-a97a-ccd7bb5aa0ae
-    weight: -10
-    label: Upload
-    id: entity_form

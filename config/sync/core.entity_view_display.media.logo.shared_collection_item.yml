@@ -21,28 +21,30 @@ mode: shared_collection_item
 content:
   field_keywords:
     type: entity_reference_label
-    weight: 3
     label: inline
     settings:
       link: false
     third_party_settings: {  }
+    weight: 3
     region: content
   name:
     type: string
-    weight: 1
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
     region: content
   thumbnail:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: gallery_item
       image_link: ''
+      image_style: gallery_item
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   created: true

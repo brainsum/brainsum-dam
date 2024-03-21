@@ -18,11 +18,11 @@ resourceFields:
     enhancer:
       id: ''
   uuid:
+    disabled: false
     fieldName: uuid
     publicName: uuid
     enhancer:
       id: ''
-    disabled: false
   vid:
     disabled: true
     fieldName: vid
@@ -42,17 +42,17 @@ resourceFields:
     enhancer:
       id: ''
   name:
+    disabled: false
     fieldName: name
     publicName: name
     enhancer:
       id: ''
-    disabled: false
   thumbnail:
+    disabled: false
     fieldName: thumbnail
     publicName: thumbnail
     enhancer:
       id: ''
-    disabled: false
   uid:
     disabled: true
     fieldName: uid
@@ -60,23 +60,23 @@ resourceFields:
     enhancer:
       id: ''
   status:
+    disabled: false
     fieldName: status
     publicName: status
     enhancer:
       id: ''
-    disabled: false
   created:
+    disabled: false
     fieldName: created
     publicName: created
     enhancer:
       id: ''
-    disabled: false
   changed:
+    disabled: false
     fieldName: changed
     publicName: changed
     enhancer:
       id: ''
-    disabled: false
   revision_timestamp:
     disabled: true
     fieldName: revision_timestamp
@@ -102,11 +102,11 @@ resourceFields:
     enhancer:
       id: ''
   field_category:
+    disabled: false
     fieldName: field_category
     publicName: field_category
     enhancer:
       id: ''
-    disabled: false
   field_expiration_date:
     disabled: true
     fieldName: field_expiration_date
@@ -114,44 +114,44 @@ resourceFields:
     enhancer:
       id: ''
   field_gps_gpslatitude:
+    disabled: false
     fieldName: field_gps_gpslatitude
     publicName: field_gps_gpslatitude
     enhancer:
       id: ''
-    disabled: false
   field_gps_gpslongitude:
+    disabled: false
     fieldName: field_gps_gpslongitude
     publicName: field_gps_gpslongitude
     enhancer:
       id: ''
-    disabled: false
   field_image:
+    disabled: false
     fieldName: field_image
     publicName: field_image
     enhancer:
       id: ''
-    disabled: false
   field_iptc_by_line:
+    disabled: false
     fieldName: field_iptc_by_line
     publicName: field_iptc_by_line
     enhancer:
       id: ''
-    disabled: false
   field_iptc_caption:
+    disabled: false
     fieldName: field_iptc_caption
     publicName: field_iptc_caption
     enhancer:
       id: ''
-    disabled: false
   field_iptc_object_name:
+    disabled: false
     fieldName: field_iptc_object_name
     publicName: field_iptc_object_name
     enhancer:
       id: ''
-    disabled: false
   field_keywords:
+    disabled: false
     fieldName: field_keywords
     publicName: field_keywords
     enhancer:
       id: ''
-    disabled: false

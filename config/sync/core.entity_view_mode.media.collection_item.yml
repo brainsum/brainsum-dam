@@ -8,5 +8,6 @@ _core:
   default_config_hash: nl1jNkYkyAJL3W33pOiZb8oPAOPc8iZUKXMtBBuYDxg
 id: media.collection_item
 label: 'Collection item'
+description: ''
 targetEntityType: media
 cache: true

@@ -2,12 +2,6 @@ uuid: d5f232b3-0cab-430a-9e48-45431720bb08
 langcode: en
 status: true
 dependencies:
-  module:
-    - search_api_solr
-    - media
-    - file
-    - taxonomy
-    - search_api
   config:
     - field.storage.media.field_file
     - field.storage.media.field_files
@@ -18,11 +12,24 @@ dependencies:
     - field.storage.media.field_template_file
     - field.storage.media.field_video_file
     - search_api.server.solr
+  module:
+    - search_api_solr
+    - media
+    - file
+    - taxonomy
+    - search_api
 third_party_settings:
   search_api_solr:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
+    term_modifiers:
+      slop: 10000000
+      fuzzy: 2
+    multilingual:
+      use_language_undefined_as_fallback_language: false
+      specific_languages: {  }
+      use_universal_collation: false
 _core:
   default_config_hash: KT2o-Qii6KAUuhSz8GrVePB0lYpKisRHURqksGbxfhM
 id: solr_media
@@ -160,6 +167,9 @@ processor_settings:
   add_url: {  }
   aggregated_field: {  }
   ignore_character:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
     all_fields: false
     fields:
       - file_filename
@@ -171,7 +181,7 @@ processor_settings:
       - media_name
       - template_filename
       - video_filename
-    ignorable: '[''¿¡!?,.:;]'
+    ignorable: "['¿¡!?,.:;]"
     ignorable_classes:
       - Pc
       - Pd
@@ -181,9 +191,6 @@ processor_settings:
       - Po
       - Ps
       - Zl
-    weights:
-      preprocess_index: -10
-      preprocess_query: -10
   language_with_fallback: {  }
   rendered_item: {  }
   solr_date_range:
@@ -193,6 +200,7 @@ tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: true
   cron_limit: 500
+  index_directly: true
+  track_changes_in_references: true
 server: solr

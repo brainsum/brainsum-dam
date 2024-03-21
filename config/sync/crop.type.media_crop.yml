@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 _core:
   default_config_hash: BT7112-FbJiqZMeQBf6TP0_lcdbHPVbSU_FHbb_GIzo
-id: media_crop
 label: 'Media Crop'
+id: media_crop
 description: 'Crop used for image media bundle.'
 aspect_ratio: ''
 soft_limit_width: null

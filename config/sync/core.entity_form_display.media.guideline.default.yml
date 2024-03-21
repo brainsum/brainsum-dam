@@ -24,42 +24,42 @@ bundle: guideline
 mode: default
 content:
   field_custom_thumbnail:
+    type: image_focal_point
     weight: 6
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
       preview_link: true
       offsets: '50,50'
     third_party_settings: {  }
-    type: image_focal_point
-    region: content
   field_files:
+    type: file_generic
     weight: 1
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_images:
+    type: image_focal_point
     weight: 8
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
       preview_link: true
       offsets: '50,50'
     third_party_settings: {  }
-    type: image_focal_point
-    region: content
   field_keywords:
+    type: select2_entity_reference
     weight: 6
+    region: content
     settings:
       width: 100%
       autocomplete: true
       match_operator: CONTAINS
       match_limit: 10
     third_party_settings: {  }
-    type: select2_entity_reference
-    region: content
   field_template_description:
     type: text_textarea
     weight: 7
@@ -96,10 +96,10 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 10
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
 hidden:
   created: true

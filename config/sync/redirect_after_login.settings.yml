@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: ntgdDow_bGFQFreetwqA_ET3sk_BGKP0ZANZ2vp352Q
 login_redirection:
   anonymous: null
   authenticated: /
@@ -7,5 +9,3 @@ login_redirection:
   agency: /
   manager: /
   administrator: /
-_core:
-  default_config_hash: ntgdDow_bGFQFreetwqA_ET3sk_BGKP0ZANZ2vp352Q
